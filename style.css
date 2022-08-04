@@ -145,7 +145,6 @@ p {
 .pisaliOmeni {
 
     display: flex;
-
     justify-content: space-evenly;
 }
 
@@ -199,7 +198,7 @@ main {
     h1 {
         font-size: 3rem;
     }
-    main{width: 90vw;
+    main {width: 90vw;
     margin: 2rem auto;
     }
     main p{
@@ -207,6 +206,18 @@ main {
     }
     main p:first-of-type {
         font-size: 2rem;
+    }
+    article {
+   
+        width: 90vw;
+        /* margin: 2rem auto; */
+    }
+    .pisaliOmeni{
+        display: block;
+    }
+    .pisaliOmeni img{
+        display: block;
+        margin: 3% auto;
     }
 }
 
@@ -224,6 +235,12 @@ main {
     }
     main p{
         font-size:1rem;
+    }
+    .pisaliOmeni{
+        display: block;
+    }
+    .pisaliOmeni img{
+        margin: 0 auto;;
     }
 }
 
