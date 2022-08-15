@@ -18,6 +18,7 @@
     --boho-violet: #A85F99;
     --boho-beige: #926C4F;
     --boho-purple: #583553;
+    --boho-lavander: #A276AB;
     /* colors
 #B35642 Terracota 
 #495E48 Boho Green
@@ -32,7 +33,7 @@
 }
 
 body {
-    background-color: var(--boho-green);
+    background-color: var(--boho-rust);
 }
 
 
@@ -42,7 +43,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover; */
     /* background-position: bottom; */
-    background-color: var(--boho-violet);
+    background-color: var(--boho-beige);
     height: 10vh;
     cursor: pointer;
 }
@@ -51,7 +52,7 @@ h1 {
     width: 50%;
     margin: 0 auto;
     padding-top: 1%;
-    color: var(--boho-yellow);
+    color: var(--boho-black);
     font-family: 'Dancing Script', cursive;
     /* font-family: 'Courier New', Courier, monospace; */
     font-size: 5rem;
@@ -71,7 +72,7 @@ menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--boho-blue);
+    background-color: var(--boho-brown);
 
     height: 60px;
 
@@ -79,7 +80,7 @@ menu {
 
 menu a {
     /* color:#E47036; */
-    color: var(--boho-pink);
+    color: var(--boho-purple);
     width: 100px;
     font-size: 2rem;
     text-decoration: none;
@@ -307,4 +308,62 @@ main {
         width: 31vw;
         height:30vh;
     }
+}
+
+.boje div{
+    width:100vw;
+    height: 7vh;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    border: 2px solid black;
+}
+
+.bohoGreen{
+background-color: var(--boho-green)}
+
+.bohoYellow{
+    background-color: var(--boho-yellow);
+}
+
+.bohoPink{
+    background-color: var(--boho-pink);
+}
+
+.bohoBlue{
+    background-color: var(--boho-blue);
+}
+.bohoBlack{
+    background-color:var(--boho-black);
+}
+
+.bohoBrown{
+    background-color:var(--boho-brown) ;
+}
+
+.bohoRed{
+    background-color: var(--boho-red);
+}
+
+.bohoRust{
+    background-color: var(--boho-rust);
+}
+
+.bohoPurple{
+    background-color: var(--boho-purple);
+}
+
+.bohoLavander{
+    background-color: var(--boho-lavander);
+}
+
+.bohoBeige{
+    background-color: var(--boho-beige);
+}
+.bohoViolet{
+    background-color: var(--boho-violet);
+}
+
+.bohoOrange{
+background-color: var(--boho-orange);
 }
