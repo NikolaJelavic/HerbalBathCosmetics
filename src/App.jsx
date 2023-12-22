@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import One from './pages/One';
 import Two from './pages/Two';
 import Three from './pages/Three';
+import Jest from './pages/Jest';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
           <Route path="/one" element={<One />} />
           <Route path="/two" element={<Two />} />
           <Route path="/three" element={<Three />} />
-          {/* <Route path="/jest" element={<Jest />} /> */}
+          <Route path="/jest" element={<Jest />} />
           {/* <Route path="/typescript" element={<Typescript />} /> */}
         </Routes>
 
