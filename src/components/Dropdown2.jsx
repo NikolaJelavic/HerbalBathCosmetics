@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 export default function Dropdown2() {
 
   const links = [
-    { label: "Games", path: "/games" },
-    { label: "TypeScript", path: "/typescript" },
+    // { label: "Games", path: "/games" },
+    // { label: "TypeScript", path: "/typescript" },
     // { label: "Jest", path: "/jest" },
   ];
   const renderedLinks = links.map((link) => {
