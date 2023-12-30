@@ -2,12 +2,12 @@
 
 import { Link } from "react-router-dom";
 
-export default function Dropdown3() {
+export default function ISTQB() {
 
   const links = [
-    // { label: "1", path: "/1" },
-    // { label: "2", path: "/2" },
-    // { label: "3", path: "/3" },
+    { label: "istqb", path: "/istqb" },
+    { label: "2", path: "/2" },
+    { label: "3", path: "/3" },
   ];
   const renderedLinks = links.map((link) => {
     return (
