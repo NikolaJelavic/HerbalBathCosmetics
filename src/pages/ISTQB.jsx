@@ -11,24 +11,43 @@ export default function ISTQB() {
         >
           <Accordion.Item eventKey="1">
             <Accordion.Header>
-              1
+             Basics
             </Accordion.Header>
             <Accordion.Body className="visible">
               
+
+            <p className="text-2xl text-bold"> Marks distribution</p>
               <p className="m-2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quae explicabo, culpa eligendi molestiae libero voluptates tenetur vitae omnis officiis autem repellendus adipisci, consequatur illum beatae laudantium pariatur quibusdam quisquam?
+1. Fundamentals of Testing - 7 questions <br />
+2. Testing Throughout of SDLM - 6 questions <br />
+3. Static Testing - 3 questions <br />
+4. Test Techniques - 12 questionws <br />
+5. Test Management - 8 questions <br />
+6. Tool Support for Testing - 4 questions <br />
+
+
               </p>
-              <p className="text-2xl text-bold">11</p>
+              <p className="text-2xl text-bold">Knowledge levels</p>
               <p className="m-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, in? Voluptas veritatis quo aperiam eius aspernatur? Sint hic quod aspernatur dolor exercitationem, cumque facere, accusantium provident maxime amet vitae ad.
+K1 - Remember - The candidate will recognize, remember and recall a term or concept   <br />
+K2 - Understand - Select the reasons or explanations for statement related to the topic and can summarize, differentiate, classify and give examples for facts, testing concepts and test procedures.    <br />
+K3 - Analyze - Select the correct application of a concept or technique and apply it to a given context. K3 is normally applicable to procedural knowledge.     <br />
               </p>
               <p className="text-2xl text-bold">
-                12
+                Exam pattern
               </p>
               <p className="m-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos, voluptas nobis vero enim porro sit consequatur voluptates blanditiis necessitatibus consequuntur ut ipsum quasi dicta officia quas error asperiores dolores?
-                Animi unde fugiat eveniet illo reiciendis optio harum aut deserunt magni? Quo saepe cupiditate tenetur odit maxime assumenda eligendi pariatur, tempore nostrum quaerat facilis amet laboriosam harum ducimus. Nam, cum!
+                40 questions, each one mark, 60 +15 minutes, minimum 26 points<br />
+            </p>
+            <p className="text-2xl text-bold">
+                Learning Objectives
               </p>
+              <p className="m-2">
+K1 - Identify typical objectives of testing <br />
+K2 - Differentiate testing from debugging <br />
+K3 - 
+            </p>
+
 
          
 
