@@ -6,6 +6,7 @@ import Two from './pages/Two';
 import Three from './pages/Three';
 import Jest from './pages/Jest';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ISTQB from './pages/ISTQB';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path="/two" element={<Two />} />
           <Route path="/three" element={<Three />} />
           <Route path="/jest" element={<Jest />} />
-          {/* <Route path="/typescript" element={<Typescript />} /> */}
+          <Route path="/istqb" element={<ISTQB />} />
         </Routes>
 
         <div className='w-60'>
