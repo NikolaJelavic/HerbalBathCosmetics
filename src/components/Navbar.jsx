@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Dropdown1 from "./Dropdown1";
 import Dropdown2 from "./Dropdown2";
 // import Dropdown3 from "./ISTQB";
-import ISTQB from "./ISTQB";
+import Testing from "./Testing";
 
 export default function Navbar() {
   const [isDropdownVisible1, setDropdownVisible1] = useState(false);
@@ -63,8 +63,8 @@ export default function Navbar() {
           onMouseLeave={handleMouseLeave3}
           className="text-stone-900 font-black hover:text-green-600 text-xl"
         >
-          <div>ISTQB</div>
-          {isDropdownVisible3 && <ISTQB />}
+          <div>Testing</div>
+          {isDropdownVisible3 && <Testing />}
         </div>
       </ul>
     </nav>
