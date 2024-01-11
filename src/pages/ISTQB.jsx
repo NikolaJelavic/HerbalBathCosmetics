@@ -58,22 +58,52 @@ K3 -
           <Accordion.Item eventKey="2">
             <Accordion.Header>
              
-              2
+              Testing
             </Accordion.Header>
             <Accordion.Body className="visible">
             <p className="m-2">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quae explicabo, culpa eligendi molestiae libero voluptates tenetur vitae omnis officiis autem repellendus adipisci, consequatur illum beatae laudantium pariatur quibusdam quisquam?
               </p>
-              <p className="text-2xl text-bold">11</p>
+              <p className="text-2xl text-bold">Foundations of Software Testing</p>
               <p className="m-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, in? Voluptas veritatis quo aperiam eius aspernatur? Sint hic quod aspernatur dolor exercitationem, cumque facere, accusantium provident maxime amet vitae ad.
+              Test basis - the body of knowledge used as the basis for test analysis <br/>
+
+Test condition - Testable aspect of a component or system identified as a basis for testing <br/>
+
+
+Test case - Set of preconditions, inputs, actions, expected results and postconditions, developed based on test conditions. Set of actions to test conditions. <br />
+
+
+
+Test procedure - Sequence of test cases in execution order, and any associated actions that may be required to set up the initial preconditions and any wrap up activities post execution. <br />
+
+
+Test data - Data needed for test execution. <br />
+
+Test suite - Set/group  of test scripts or test procedures to be executed in a specific test run. <br />
+
+
+Testware - Work products produced during the test process for use in planning, designing, executing, evaluating and reporting on testing. <br />
+
+
+
+Test oracle - Source to determine an expected result to compare with the actual result of the system under test <br />
+
+
+
               </p>
               <p className="text-2xl text-bold">
-                12
+              7 Principles
               </p>
               <p className="m-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos, voluptas nobis vero enim porro sit consequatur voluptates blanditiis necessitatibus consequuntur ut ipsum quasi dicta officia quas error asperiores dolores?
-                Animi unde fugiat eveniet illo reiciendis optio harum aut deserunt magni? Quo saepe cupiditate tenetur odit maxime assumenda eligendi pariatur, tempore nostrum quaerat facilis amet laboriosam harum ducimus. Nam, cum!
+              1. Testing shows the presence of defects, not their absence <br />
+2. Exhaustive testing is impossible <br />
+3. Early testing saves time and money <br />
+4. Defects cluster together <br />
+5. Beware of the pesticide paradox <br />
+6. Early testing saves time and money <br />
+7. Absence-of-errors is a fallacy(zabluda) <br />
+
               </p>
               
             </Accordion.Body>
