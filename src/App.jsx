@@ -9,6 +9,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ISTQB from './pages/ISTQB';
 import PenTest from './pages/PenTest';
 import XSS from './pages/XSS';
+import Postman from './pages/Postman';
+import Interview from './pages/Interview';
 
 function App() {
   return (
@@ -24,6 +26,12 @@ function App() {
           <Route path="/istqb" element={<ISTQB />} />
           <Route path="/pentest" element={<PenTest/>}/>
           <Route path="/xss" element={<XSS/>}/>
+          <Route path="/postman" element={<Postman/>}/>
+          <Route path="/xss" element={<XSS/>}/>
+          <Route path="/interview" element={<Interview/>}/>
+
+
+
         </Routes>
 
         <div className='w-60'>

@@ -4,7 +4,7 @@ import Accordion from "react-bootstrap/Accordion";
 export default function XSS() {
     return  (
         <>
-        <div className="flex flex-col lg:flex-row justify-evenly my-8">
+        <div className="flex flex-col lg:flex-row justify-evenly mt-24">
         <Accordion
               defaultActiveKey="2" //always open one
               className="w-full lg:w-2/5 mb-4 lg:mb-0"

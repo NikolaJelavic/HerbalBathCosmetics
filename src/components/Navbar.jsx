@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Dropdown1 from "./Dropdown1";
-import Dropdown2 from "./Dropdown2";
+import Coding from "./Coding";
 // import Dropdown3 from "./ISTQB";
 import Testing from "./Testing";
 
@@ -33,7 +33,7 @@ export default function Navbar() {
     setDropdownVisible3(false);
   };
   return (
-    <nav className="w-full bg-blue-600 flex p-5 h-20">
+    <nav className="w-full bg-blue-600 flex pt-4 h-20">
       <ul className="flex justify-around w-full">
         <Link
           to="/"
@@ -54,8 +54,8 @@ export default function Navbar() {
           onMouseLeave={handleMouseLeave2}
           className="text-stone-900 font-black hover:text-green-600 text-xl"
         >
-          <div>Dropdown2</div>
-          {isDropdownVisible2 && <Dropdown2 />}
+          <div>Coding</div>
+          {isDropdownVisible2 && <Coding />}
         </div>
       
         <div
