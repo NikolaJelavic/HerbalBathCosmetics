@@ -60,9 +60,7 @@ const NoteApp = () => {
 
             <hr className="border-t border-gray-700 my-6" />
 
-            <div id="noMatches" className="flex flex-wrap -mx-4 container-fluid"></div>
-
-            <div id="notes" className="flex flex-wrap -mx-4 container-fluid">
+            <div id="notes" className="flex flex-wrap justify-around container-fluid">
                 {notes.length === 0 ? (
                     <h3 style={{ textAlign: 'center', color: 'grey' }}>Nothing to display</h3>
                 ) : (
