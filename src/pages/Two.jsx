@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 const NoteApp = () => {
     const [notes, setNotes] = useState([]);
-    
+   
 
     useEffect(() => {
         displayNotes();
@@ -19,7 +19,12 @@ const NoteApp = () => {
         setNotes(notesObj);
     };
 
- 
+    const deleteNote = (index) => {
+        let notesObj = [...notes];
+        notesObj.splice(index, 1);
+        localStorage.setItem('notes', JSON.stringify(notesObj));
+        displayNotes();
+    };
 
     const addNote = () => {
         let notesObj = [];
@@ -42,7 +47,6 @@ const NoteApp = () => {
     };
 
    
-
     return (
         <div className="container mx-auto my-3">
             <div className="max-w-lg mx-auto bg-gray-900 text-white p-4 mb-6 rounded-lg">
@@ -67,7 +71,7 @@ const NoteApp = () => {
                             <div className="card-body">
                                 <h6>{note.time}</h6>
                                 <p className="card-text">{note.text}</p>
-                                <button className="btn btn-danger">Delete</button>
+                                <button onClick={() => deleteNote(index)} className="btn btn-danger">Delete</button>
                             </div>
                         </div>
                     ))
