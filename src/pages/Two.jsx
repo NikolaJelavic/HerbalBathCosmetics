@@ -1,8 +1,7 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const NoteApp = () => {
     const [notes, setNotes] = useState([]);
-   
 
     useEffect(() => {
         displayNotes();
@@ -26,6 +25,16 @@ const NoteApp = () => {
         displayNotes();
     };
 
+    const editNote = (index) => {
+        let notesObj = [...notes];
+        let newNoteText = prompt('Edit your note:', notesObj[index].text);
+        if (newNoteText !== null) {
+            notesObj[index].text = newNoteText;
+            localStorage.setItem('notes', JSON.stringify(notesObj));
+            displayNotes();
+        }
+    };
+
     const addNote = () => {
         let notesObj = [];
         let addNoteInput = document.getElementById('addNote');
@@ -46,7 +55,6 @@ const NoteApp = () => {
         displayNotes();
     };
 
-   
     return (
         <div className="container mx-auto my-3">
             <div className="max-w-lg mx-auto bg-gray-900 text-white p-4 mb-6 rounded-lg">
@@ -69,6 +77,7 @@ const NoteApp = () => {
                             <div className="card-body">
                                 <h6>{note.time}</h6>
                                 <p className="card-text">{note.text}</p>
+                                <button onClick={() => editNote(index)} className="btn btn-primary mr-2">Edit</button>
                                 <button onClick={() => deleteNote(index)} className="btn btn-danger">Delete</button>
                             </div>
                         </div>
