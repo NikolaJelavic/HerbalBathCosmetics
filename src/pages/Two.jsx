@@ -46,21 +46,27 @@ const NoteApp = () => {
         let notesObj = [];
         let addNoteInput = document.getElementById('addNote');
         let notesString = localStorage.getItem('notes');
-
+    
         if (notesString !== null) {
             notesObj = JSON.parse(notesString);
         }
-
+    
+        if (!addNoteInput.value.trim()) {
+            alert('Please enter a note before adding.');
+            return; 
+        }
+    
         let now = new Date();
         let dateTime = `${now.getDate()}-${now.getMonth() + 1}-${now.getFullYear()}`;
-
+    
         let tempObj = { text: addNoteInput.value, time: dateTime };
-        notesObj.push(tempObj);
+        notesObj.unshift(tempObj); 
         localStorage.setItem('notes', JSON.stringify(notesObj));
-
+    
         addNoteInput.value = '';
         displayNotes();
     };
+    
 
     return (
         <div className="container mx-auto my-3">
