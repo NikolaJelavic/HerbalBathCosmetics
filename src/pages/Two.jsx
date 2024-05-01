@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const NoteApp = () => {
     const [notes, setNotes] = useState([]);
@@ -45,28 +45,24 @@ const NoteApp = () => {
     const addNote = () => {
         let notesObj = [];
         let addNoteInput = document.getElementById('addNote');
+        let tagsInput = document.getElementById('tagsInput');
         let notesString = localStorage.getItem('notes');
-    
+
         if (notesString !== null) {
             notesObj = JSON.parse(notesString);
         }
-    
-        if (!addNoteInput.value.trim()) {
-            alert('Please enter a note before adding.');
-            return; 
-        }
-    
+
         let now = new Date();
         let dateTime = `${now.getDate()}-${now.getMonth() + 1}-${now.getFullYear()}`;
-    
-        let tempObj = { text: addNoteInput.value, time: dateTime };
+
+        let tempObj = { text: addNoteInput.value, time: dateTime, tags: tagsInput.value.split(',').map(tag => tag.trim()) };
         notesObj.unshift(tempObj); 
         localStorage.setItem('notes', JSON.stringify(notesObj));
-    
+
         addNoteInput.value = '';
+        tagsInput.value = '';
         displayNotes();
     };
-    
 
     return (
         <div className="container mx-auto my-3">
@@ -74,6 +70,9 @@ const NoteApp = () => {
                 <h5 className="text-xl font-semibold mb-2">Write a note</h5>
                 <div className="form-group">
                     <textarea className="form-input w-full bg-gray-800 text-white border-none rounded-lg py-2 px-4" id="addNote" aria-label="With textarea"></textarea>
+                </div>
+                <div className="form-group">
+                    <input type="text" className="form-input w-full bg-gray-800 text-white border-none rounded-lg py-2 px-4" id="tagsInput" placeholder="Add tags/categories (comma separated)" />
                 </div>
                 <br />
                 <button onClick={addNote} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg">Add</button>
@@ -90,8 +89,13 @@ const NoteApp = () => {
                             <div className="card-body">
                                 <h6>{note.time}</h6>
                                 <p className="card-text">{note.text}</p>
-                                <div className="absolute top-0 right-0 mt-2 mr-2 ">
+                                <div className="absolute top-0 right-0 mt-2 mr-2">
                                     <input type="color" value={note.color || '#ffffff'} onChange={(e) => changeColor(index, e.target.value)} />
+                                </div>
+                                <div className="tags-container">
+                                    {note.tags && note.tags.map((tag, tagIndex) => (
+                                        <span key={tagIndex} className="tag">{tag}</span>
+                                    ))}
                                 </div>
                                 <div className="d-flex justify-content-between">
                                     <button onClick={() => editNote(index)} className="btn btn-primary">Edit</button>
